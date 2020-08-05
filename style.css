@@ -1,0 +1,37 @@
+body {
+    overflow: hidden;
+    height: 100%;
+    color: yellow;
+    background-image: url("star-wars-backgrounds-25.jpg");
+}
+
+#crawl {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    animation: animateCrawl 60s ease-in;
+    font-family: "Droid Serif";
+    font-weight: bold;
+    word-spacing: 5px;
+    font-size: x-large;
+}
+
+@keyframes animateCrawl {
+    0% {
+        transform: rotateX(30deg) translateZ(-1600px);
+    }
+    100% {
+        transform: rotateX(30deg) translateY(-800px);
+    }
+}
+
+#starwars {
+    transform: perspective(100px) rotateX(10deg);
+}
+
+h1 {
+    color: dodgerblue;
+    text-align: center;
+}
+
+
