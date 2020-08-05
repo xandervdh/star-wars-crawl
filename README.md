@@ -20,3 +20,10 @@ In this assignment I made the opening crawler from Star Wars with only HTML and 
                         <p>Did you hear that? They've shut down the main reactor. We'll be destroyed for sure. This is madness! We're doomed! There'll be no escape for the Princess this time. What's that? Artoo! Artoo-Detoo, where are you? At last! Where have you been? They're heading in this direction. What are we going to do? We'll be sent to the spice mine of Kessel or smashed into who knows what! Wait a minute, where are you going?</p>
                     </div>
                 </div>
+
+Here you can see that I made to div's
+<br>
+one with id "starwars"
+<br>
+and another one in the previous one with id "crawl"
+
