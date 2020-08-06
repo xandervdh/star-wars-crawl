@@ -32,7 +32,7 @@ and another one in the previous one with id "crawl"
 ### CSS
 We are going to start with the body
 
-```html
+```css
 body {
     overflow: hidden;
     height: 100%;
@@ -44,7 +44,7 @@ to make sure that people can't scroll on the page we use "overflow: hidden" and 
 and we ad the starry background. We also tell it that the font color has to be yellow
 
 Next we will center the text
-```html
+```css
 #crawl {
     margin: auto;
     width: 50%;
@@ -59,7 +59,7 @@ We call on the crawl id and add a width of 50% and "margin:auto" so it will be c
 We also add the font and change the wait.
 
 next we will ad a piece of code to this one to start the animation that we will be creating after
-```html
+```css
 animation: animateCrawl 60s ease-in;
 ```
 "animateCrawl" tells the code the name of the animation he needs to use.
@@ -69,7 +69,7 @@ animation: animateCrawl 60s ease-in;
 and the "ease-in" will tell it to go slower in the beginning and then go faster.
 
 Next we are adding the perspectif to the text with the next piece of code
-```html
+```css
 #starwars {
     transform: perspective(100px) rotateX(10deg);
 }
@@ -77,7 +77,7 @@ Next we are adding the perspectif to the text with the next piece of code
 it tells the code to give perspective to the text and the rotateX is telling it to rotate backwards to make it look as if it is going away from us.
 
 the last thing to do is add the animation itself
-```html
+```css
 @keyframes animateCrawl {
     0% {
         transform: rotateX(30deg) translateY(-1600px);
