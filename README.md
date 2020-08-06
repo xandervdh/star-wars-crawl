@@ -6,6 +6,7 @@ link to the online version: https://xandervdh.github.io/star-wars-crawl/
 In this assignment I made the opening crawler from Star Wars with only HTML and CSS.
 
 ## How does it work?
+### HTML
 ```html
 <div id="starwars">
     <div id="crawl">
@@ -27,3 +28,74 @@ Here you can see that I made to div's
 one with id "starwars"
 <br>
 and another one in the previous one with id "crawl"
+
+### CSS
+We are going to start with the body
+
+```html
+body {
+    overflow: hidden;
+    height: 100%;
+    color: yellow;
+    background-image: url("star-wars-backgrounds-25.jpg");
+}
+```
+to make sure that people can't scroll on the page we use "overflow: hidden" and "height:100%"
+and we ad the starry background. We also tell it that the font color has to be yellow
+
+Next we will center the text
+```html
+#crawl {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    font-family: "Droid Serif";
+    font-weight: bold;
+    word-spacing: 5px;
+    font-size: x-large;
+}
+```
+We call on the crawl id and add a width of 50% and "margin:auto" so it will be centered.
+We also add the font and change the wait.
+
+next we will ad a piece of code to this one to start the animation that we will be creating after
+```html
+animation: animateCrawl 60s ease-in;
+```
+"animateCrawl" tells the code the name of the animation he needs to use.
+
+"60s" tells it how long the animation schould last.
+
+and the "ease-in" will tell it to go slower in the beginning and then go faster.
+
+Next we are adding the perspectif to the text with the next piece of code
+```html
+#starwars {
+    transform: perspective(100px) rotateX(10deg);
+}
+```
+it tells the code to give perspective to the text and the rotateX is telling it to rotate backwards to make it look as if it is going away from us.
+
+the last thing to do is add the animation itself
+```html
+@keyframes animateCrawl {
+    0% {
+        transform: rotateX(30deg) translateY(-1600px);
+    }
+    100% {
+        transform: rotateX(30deg) translateY(-800px);
+    }
+}
+```
+we use @keyframes for that.
+
+we name the animation by putting it after @keyframes.
+
+next we define how the animation should look like at 0%
+and at 100%
+
+we keep the rotateX the same but change the "translateY"
+
+with translateY you are going to move the dir on the y axis, so vertically.
+
+also make sure to add normalize.css, it's mainly for the background image
