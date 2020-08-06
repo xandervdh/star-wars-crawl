@@ -99,3 +99,5 @@ we keep the rotateX the same but change the "translateY"
 with translateY you are going to move the dir on the y axis, so vertically.
 
 also make sure to add normalize.css, it's mainly for the background image
+
+here is the link to the live version of this code: https://xandervdh.github.io/star-wars-crawl/
