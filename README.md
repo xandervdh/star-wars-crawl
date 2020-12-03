@@ -1,6 +1,7 @@
 # star-wars-crawl
+This [challenge](star-wars-backgrounds-25.jpg) recreating the star wars crawl with HTML and CSS
 
-link to the online version: https://xandervdh.github.io/star-wars-crawl/
+[Live version](https://xandervdh.github.io/star-wars-crawl/)
 
 ## What is this about?
 In this assignment I made the opening crawler from Star Wars with only HTML and CSS.
